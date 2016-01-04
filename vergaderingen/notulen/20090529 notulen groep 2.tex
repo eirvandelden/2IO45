@@ -1,0 +1,132 @@
+%
+%  untitled
+%
+%  Created by Etienne van Delden on 2009-04-02.
+%  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+%\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+%\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{Notulen vergadering Groep 2 (2IO45)}
+\author{ Etienne van Delden }
+
+\date{2009-04-02}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+\section{Opening vergadering} % (fold)
+\label{sec:opening_vergadering}
+\begin{tabular}{ll}
+  Datum:      & 29-05-2009\\
+  Begin tijd: & 14:02\\
+  Voorzitter: & Anson van Rooij \\
+  Notulist:   & Etienne van Delden\\
+  \multicolumn{2}{l}{Aanwezigheid leden: Iedereen is aanwezig}\\
+\end{tabular}
+
+% section opening_vergadering (end)
+
+\section{Opmerkingen vorige notulen} % (fold)
+\label{sec:opmerkingen_vorige_notulen}
+  De notulen zijn goedgekeurd.
+% section opmerkingen_vorige_notulen (end)
+
+\section{Mededelingen} % (fold)
+\label{sec:mededelingen}
+    \subsection{Input tutor} % (fold)
+    \label{sub:input_tutor}
+        \begin{itemize}
+            \item Feedback van Hoogerwoord over 
+        \end{itemize}
+    % subsection input_tutor (end)
+% section mededelingen (end)
+
+\section{Geplande items} % (fold)
+\label{sec:geplande_items}
+
+  \subsubsection{Reactie ontwerpdocument} % (fold)
+  \label{ssub:reactie_specificatie}
+    \begin{itemize}
+      \item Het is nog niet nagekeken, maar eerste feedback: de interface is de interface voor de modules, niet de GUI.
+      \item Er mist nog het protocol, met alle messages en parameters erin. Ook mogen er meer functies in de classe diagrammen.
+    \item Er moet goed worden gedocumenteerd wat de netwerk opzet is.
+    \end{itemize}
+  % subsubsection reactie_specificatie (end)
+  
+% section geplande_items (end)
+
+\section{Planning komende week} % (fold)
+\label{sec:planning_komende_week}
+  \begin{itemize}
+    \item De taakverdeling was voor de vergadering behandeld.
+  \end{itemize}
+% section planning_komende_week (end)
+
+
+
+\section{W.V.T.T.K} % (fold)
+\label{sec:w_v_t_t_k}
+  \begin{itemize}
+    \item Voor het opzetten van de token ring mag er een client/server structuur zijn. Tijdens het spelen moet dit echter weg.
+    \item Er zullen geen eisen worden gesteld aan de code, zolang het maar werkt.
+  \end{itemize}
+% section w_v_t_t_k (end)
+
+\section{Sluiting} % (fold)
+\label{sec:sluiting}
+\emph{om 15:01}
+% section sluiting (end)
+
+\end{document}

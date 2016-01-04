@@ -1,0 +1,15 @@
+OpenGL
+======
+
+World (Leroy, Edin)
+---------------
+- objecten
+- textures
+- sound
+- ontploffing
+
+Interface (Neal)
+---------------
+- MiniMap
+- Menu
+- Statistieken

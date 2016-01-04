@@ -1,0 +1,57 @@
+8
+
+dir
+784
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2/code
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2
+
+
+
+2009-05-29T12:24:53.545383Z
+379
+leroybakker
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0b2ba75a-b34a-4127-8846-746d036fda43
+
+network.py
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+6d790fa60593db4ec84261cf67bbc20b
+2009-05-04T12:20:36.687424Z
+126
+VeXocide
+has-props
+
+OpenGL
+dir
+
+discover.py
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+4c2bc90d59bb8325c7a42634ca43d313
+2009-03-27T13:07:56.128931Z
+26
+VeXocide
+has-props
+

@@ -1,0 +1,43 @@
+CubeLand test: a simple AI testbed.
+
+By Kris Schnee. Code and images are public domain. "Laughing Man" image imitated from "Ghost In the Shell: Stand-Alone Complex." If you're the type who finds CubeLand interesting, you'd probably enjoy this anime series too.
+"Aztec Box" image detailed from a photograph (by me) of a strange wooden object displayed in the UFO Museum in Roswell, NM, purportedly depicting an Aztec astronaut.
+
+New features:
+-3D interface (the cursor is the translucent cube)
+-"Look down" command shows you what's on this tile
+-First-person descriptions: "I am holding..."
+-Rule: Objects are either cubes or pyramids.
+-Rule: You can't put anything atop a pyramid.
+-Rule: Objects have colors. These are given in the example as words like "grey," but RGB[A] tuples like (255,255,0), ie. yellow, are usable too.
+
+Controls:
+The controls are unusual by design, as they're meant to be used by an external program.
+
+Internal control:
+Mouse buttons: Add/remove crates on the grid.
+Escape: Quit
+Up/Down: Move camera
+
+Outside control:
+Create a text file with the name "to_world.txt" in the same directory as this program. While running, the program will read its contents, react, and respond by creating a file called "from_world.txt". This system is designed for easy control by an AI; no need for sockets or anything.
+
+To try this system, try making a text file manually, elsewhere, then copying and pasting it into this directory to see what happens.
+
+Valid commands for outside control:
+quit
+move # # (where each # is a number from 0-7, the lower-left being 0,0)
+grab
+drop
+look
+look here (simpler formatting in output)
+look hand (what am I holding?)
+look self (where am I?)
+look down (what's here?)
+configure {} (where {} is a Python "dictionary" object; best ignored unless you've looked at the code.)
+
+test.txt determines what's on the board. See the example for how that file works. You can define new objects by giving them names and having a texture of the same name in the texture directory.
+
+Known bugs, due to the new 3D graphics system:
+-Text isn't displayed in this version, because OpenGL makes it far harder to write "Hello World" on the screen than to draw translucent textured 3D cubes.
+-Clicking to create crates does work, but the crates' location doesn't correspond to what you'd expect.

@@ -1,0 +1,49 @@
+8
+
+dir
+784
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2/references
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2
+
+
+
+2009-04-03T13:51:24.204261Z
+48
+0608206
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0b2ba75a-b34a-4127-8846-746d036fda43
+
+netwerk
+dir
+
+graphics
+dir
+
+python_course
+dir
+
+tutorial.pdf
+file
+
+
+
+
+2009-05-29T13:57:28.000000Z
+240e1d4701d832cc8b0aa9787636aedd
+2009-03-24T15:57:30.261629Z
+2
+s060370
+

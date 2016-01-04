@@ -1,0 +1,72 @@
+\documentclass[a4paper,twoside,11pt]{article}
+\usepackage{a4wide,amsmath,amssymb,verbatim}%,oz}
+\usepackage{listings}
+\usepackage[pdftex]{color,graphicx}
+\usepackage[pdftex,colorlinks]{hyperref}
+\usepackage{subfig}
+\lstset{language=Pascal,basicstyle=\small}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex}
+
+\begin{document}
+
+   \begin{titlepage}
+        {\ }\\[5.0cm]
+        { {\Large OGO 3.1 spring 2009}}\\[0.2cm]
+        {\bf \Huge Bomb3D Manual}\\[0.1cm]
+        { {\Large {Computer Science, TU/e} }}\\[1.0cm]
+        {\ Eindhoven, \today }\\[0.2cm]
+		  {\ $ $Rev: 225 $ $ }\\[0.2cm]
+        \begin{flushright}
+            {\bf {\small Group 2 }}\\[0.0cm]
+            {\em {\small Etienne van Delden, 0618959}}\\
+            {\em {\small Edin Dudojevic, 0608206}}\\
+            {\em {\small Jeroen Habraken, 0586866}}\\
+            {\em {\small Neal van den Eertwegh, 0610024 }}\\
+            {\em {\small Stef Louwers, 0590864}}\\
+            {\em {\small Leroy Bakker, 0617167}}\\
+            {\em {\small Anson van Rooij, 0596312}}\\[0.5cm]
+        \end{flushright}
+    \end{titlepage}
+    \tableofcontents
+    \newpage
+
+
+\section{Introduction}
+
+Hi, and thanks for purchasing, pirating or otherwise acquiring bomb3D! You've made a first step on the road to fame, fortune and endless hours of fun blasting your friends in a virtual 3D environment! 
+
+% verhaal copypasten, wat meer blaten misschien.
+
+\section{Installation}
+
+Before you can play this fantastic game, you must install it.
+
+% geblaat: hoe dan?
+
+\section{Starting a tournament}
+
+You can start a new tournament or join an existing one from the tournament searching screen.
+
+% iets over het maken van een toernooi en het setten van de rules en map. Misschien een beschrijving van een aantal maps?
+
+\section{Changing the settings}
+
+You can change the game's settings in the options menu, which you can reach from the main menu.
+
+% Lijst van input- output- en netwerkopties:
+
+\section{Playing the game}
+
+Bomb3D is played using the mouse and keyboard.
+
+% lijst met inputopties copypasten, blaat time once again.
+
+\section{Power-ups}
+
+In bomb3D, you can find many exciting and interesting powerups to enhance your performance. 
+
+% een lijst van de powerups die geimplementeerd zijn.
+
+\end{document}

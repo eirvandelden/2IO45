@@ -1,0 +1,65 @@
+\contentsline {chapter}{\numberline {0}Summary}{6}{chapter.0}
+\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
+\contentsline {chapter}{\numberline {2}Plan of Work}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Roles within the project}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Deciding about the type of game}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}Reflection}{9}{section.2.3}
+\contentsline {chapter}{\numberline {3}Specification}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}The assignment}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Definitions}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}Our brainstorming session}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}The features}{11}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Must have}{11}{subsection.3.5.1}
+\contentsline {subsubsection}{Reflection}{12}{section*.4}
+\contentsline {subsection}{\numberline {3.5.2}Ought to have}{12}{subsection.3.5.2}
+\contentsline {subsubsection}{Reflection}{13}{section*.5}
+\contentsline {subsection}{\numberline {3.5.3}Should have}{13}{subsection.3.5.3}
+\contentsline {subsubsection}{Reflection}{14}{section*.6}
+\contentsline {subsection}{\numberline {3.5.4}Could have}{14}{subsection.3.5.4}
+\contentsline {subsubsection}{Reflection}{14}{section*.7}
+\contentsline {subsection}{\numberline {3.5.5}Want to have}{14}{subsection.3.5.5}
+\contentsline {subsubsection}{Reflection}{15}{section*.8}
+\contentsline {section}{\numberline {3.6}Gameplay}{15}{section.3.6}
+\contentsline {subsubsection}{Reflection}{15}{section*.9}
+\contentsline {section}{\numberline {3.7}Interface}{16}{section.3.7}
+\contentsline {subsubsection}{Reflection}{16}{section*.10}
+\contentsline {section}{\numberline {3.8}GUI}{16}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Menu Structure}{16}{subsection.3.8.1}
+\contentsline {subsubsection}{Reflection}{17}{section*.11}
+\contentsline {subsection}{\numberline {3.8.2}Visual Output}{17}{subsection.3.8.2}
+\contentsline {subsubsection}{Reflection}{18}{section*.12}
+\contentsline {subsection}{\numberline {3.8.3}Input}{19}{subsection.3.8.3}
+\contentsline {subsubsection}{Reflection}{19}{section*.13}
+\contentsline {section}{\numberline {3.9}Winning the game}{19}{section.3.9}
+\contentsline {subsubsection}{Reflection}{20}{section*.14}
+\contentsline {subsection}{\numberline {3.9.1}Technological}{20}{subsection.3.9.1}
+\contentsline {subsubsection}{Reflection}{20}{section*.15}
+\contentsline {chapter}{\numberline {4}Design}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Design decisions and assumptions}{22}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Design decisions}{22}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Assumptions}{23}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Reflection}{23}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Program modules}{23}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}The overall design}{23}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}UML Class diagrams}{25}{subsection.4.3.2}
+\contentsline {subsubsection}{The Input module}{25}{section*.16}
+\contentsline {subsubsection}{Starting the game and Discovery}{25}{section*.17}
+\contentsline {subsubsection}{The Engine module}{26}{section*.18}
+\contentsline {subsubsection}{Events}{28}{section*.19}
+\contentsline {subsubsection}{The Output module}{29}{section*.20}
+\contentsline {subsubsection}{Screen}{29}{section*.21}
+\contentsline {subsubsection}{Sound}{30}{section*.22}
+\contentsline {subsection}{\numberline {4.3.3}Reflection}{30}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Interpeer messages}{31}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Introduction}{31}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Messages}{31}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Extension options}{33}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Reflection}{33}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Division of work}{35}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Reflection}{35}{subsection.4.5.1}
+\contentsline {chapter}{\numberline {5}Evaluation}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}Problems with the current set-up}{36}{section.5.1}
+\contentsline {section}{\numberline {5.2}Peer reviews}{36}{section.5.2}
+\contentsline {chapter}{Bibliography}{38}{figure.5.1}

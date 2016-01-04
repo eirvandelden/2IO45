@@ -1,0 +1,9 @@
+Document:
+Anson: Design decisions and assumptions
+Etienne: Program modules
+Stef: Interclient protocol
+Neal: Interface
+
+Code:
+Jeroen: Netwerk
+Leroy, Edin: OpenGL

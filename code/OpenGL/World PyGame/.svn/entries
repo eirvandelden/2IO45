@@ -1,0 +1,52 @@
+8
+
+dir
+784
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2/code/OpenGL/World%20PyGame
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2
+
+
+
+2009-04-08T15:30:14.510606Z
+57
+leroybakker
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0b2ba75a-b34a-4127-8846-746d036fda43
+
+data.py
+file
+
+
+
+
+2009-05-29T13:57:29.000000Z
+5cb6409817bcd1d7228ab32b4d0d80db
+2009-04-08T15:30:14.510606Z
+57
+leroybakker
+
+main.py
+file
+
+
+
+
+2009-05-29T13:57:29.000000Z
+e108abdffc948edc9e379200a7dd030d
+2009-04-08T15:30:14.510606Z
+57
+leroybakker
+

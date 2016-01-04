@@ -1,0 +1,319 @@
+\documentclass[a4paper,twoside,11pt]{article}
+\usepackage{a4wide,amsmath,amssymb,verbatim}%,oz}
+\usepackage{listings}
+\usepackage[pdftex]{color,graphicx}
+\usepackage[pdftex,colorlinks]{hyperref}
+\usepackage{subfig}
+\lstset{language=Pascal,basicstyle=\small}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex}
+
+\begin{document}
+
+   \begin{titlepage}
+        {\ }\\[5.0cm]
+        { {\Large OGO 3.1 spring 2009}}\\[0.2cm]
+        {\bf \Huge Design document}\\[0.1cm]
+        { {\Large {Computer Science, TU/e} }}\\[1.0cm]
+        {\ Eindhoven, \today }\\[0.2cm]
+		  {\ $ $Rev: 299 $ $ }\\[0.2cm]
+        \begin{flushright}
+            {\bf {\small Group 2 }}\\[0.0cm]
+            {\em {\small Etienne van Delden, 0618959}}\\
+            {\em {\small Edin Dudojevic, 0608206}}\\
+            {\em {\small Jeroen Habraken, 0586866}}\\
+            {\em {\small Neal van den Eertwegh, 0610024 }}\\
+            {\em {\small Stef Louwers, 0590864}}\\
+            {\em {\small Leroy Bakker, 0617167}}\\
+            {\em {\small Anson van Rooij, 0596312}}\\[0.5cm]
+        \end{flushright}
+    \end{titlepage}
+    \tableofcontents
+    \newpage
+
+
+\section{Introduction}
+
+In this phase of the project the actual program has been designed according to the specification made earlier. Modules, classes, their relations, their attributes and their methods have been designed, a protocol for the communication between program instances has been established, and an interface has been designed. The work has been divided between the group members.
+
+This is a more technical description of the complex parts of our game. For a general description of our game, see the Specification Document.
+
+Our game will be called Bomb3D.
+
+  \subsection{The story so far} % (fold)
+  \label{sub:the_story_so_far}
+
+   The year is 2176 and the darkest predictions about our future have come true. Humankind has grown far beyond the ability to sustain itself with earth's limited resources, and shortages are everywhere. Robots have taken over most jobs, virtual realities prevent the rich from facing the problems of the poor, and many biotechnology nightmares have come true. In this dystopian world, most of the earth's population lives in sprawling, metropolitan cities with ineffective, corrupt law enforcement, which have come under the control of all kinds of criminal organisations. The poor jobless masses have few career options, most of them illegal, and drug trafficking, muggings and violent gang wars are only a few of their problems. Because of this, the prison population has exploded, and people are desperate and unruly. The governments' solution is entertainment. Cruel entertainment. \\
+
+    All over the world, tournaments are held, in which prisoners are pitted against insane thrill seekers, professional gladiators, and unfortunates with powerful enemies, to serve as entertainment for the repressed masses. In these tournaments, men and women fight each other with various types of dangerous bombs and weapons provided by their patrons, plus whatever is to be found in the arena. They must use the lay-out of the battlefield and the weapons available in ever more clever ways to have a shot at freedom, fame and fortune. The object of the tournaments is simple: \\ 
+
+it is to kill \ldots or be killed.
+ 
+  % subsection the_story_so_far (end)
+
+%  \subsection{The original Bomberman} % (fold)
+%  \label{sub:the_original_bomberman}
+%    TODO:  a small advance on the user manual: what is Bomberman?
+%
+%      todo: explain that bombs explode in a ``cross'' shape
+%  % subsection the_original_bomberman (end)
+
+
+
+% wat was onze policy wat betreft newpages ook weer?
+\newpage
+\section{Design decisions and assumptions}
+
+This section consists of an incomplete list of notable design decisions and assumptions, incomplete because we are probably unaware of certain decisions and assumptions. This is no problem as the list is not meant to be complete; creating it is merely a way of noting to our future selves that we have agreed on certain issues. For more design decisions, see the specification document, particularly the sections ``gameplay'', ``interface'' and ``winning the game''.
+
+\subsection{Design decisions}
+
+\begin{itemize}
+
+    \item The game is played in ``tournaments'' that consist of multiple rounds, called ``games''. The total score over all rounds in the tournament determines a player's ranking in the tournament, with players getting one point for winning, none for losing (not winning).
+
+	\item Users can enter orders continuously. Programs act in turns, tens of times per second. When they act, they read their own user's input buffer queue, add it to the list of commands they got from peer programs, update the game's state according to this list, and send their user's input over the network to its peer programs. By the time their next turn comes around, each peer program will have sent its user's input to the program, so that it has a new list of commands to which to add its own user's commands.
+
+    \item A level is rectangular and finite in size. There is a border around each level, that prevents a player from going beyond the level. Users can pick one of several different map files or make their own, to play in different levels.
+
+    \item The assignment's intentionally vague food-gathering requirement will be incorporated into our program by the existence of ``power-ups'' in the level. Power-ups are an integral part of the game, that a player must utilise to gain the upper hand. A power-up appears whenever a ``soft block'' is destroyed, and confers a bonus to the player which walks over it first; either the player gets more bombs at his or her disposal, or these bombs become more powerful, or some special bonus is conferred. Which bonuses are available depends on the tournament's rules, as set by its creator.
+
+    \item The winner of a round is the last player surviving. To avoid overly long matches, a tournament's creator can choose a maximum time the round will take, after this time has passed the game is decided by the number of power-ups each player has gathered over the course of the game. If that amount is also equal between multiple players, the game has multiple winners. This, `` Bomberman'', is the game as it works according to the standard ruleset, there is support for the creator of a tournament to change these rules.
+
+    \item ``Bomberman'' is the ruleset we will focus on, though the tournament rules should allow for enough variation (for example: when does the round end?, how are points awarded?, which maps are used, which power-ups are available?, player stats?, players with different stats?) to allow for the playing of different kinds of games without fundamental changes.
+
+    \item A consequence of the previous decision is that targeting and shooting should already be possible although it is not necessary for the ``Bomberman'' ruleset.
+
+    \item ``Chaining'' is a problem we solved before designing the class diagrams. When a bomb explodes, it creates a blast radius. Everything in that radius; players, power-ups and soft blocks are destroyed. When a bomb belonging to a player is in that blast radius, that bomb also explodes. Chaining can be used strategically to make use of another player's bombs. We decided that whoever starts a chain ``owns'' the blast radius. Thus, when the bomb of player A explodes and chains with a bomb of player B, player A owns the blast radius. All players within the two blast radius' are killed and player A gets the score.
+
+\end{itemize}
+
+\subsection{Assumptions}
+
+Our assumptions are mainly of a technological nature: we are assuming that the network will be able to handle the traffic we are trying to get across it, and allow each program to act tens of times per second. We know from experience that this is probably a safe bet (given the amount of data that modern computer games manage to pass over the internet) as long as the data is efficiently encoded.
+
+We are not assuming anything about the operating system of the users. We will attempt to have the program work under Windows (XP), Mac OS X and Linux.
+
+%--------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
+\include{modules}
+%--------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
+
+\section{Interpeer messages}
+\subsection{Introduction}
+For all peers to be on the same page, they need to communicate. And to understand each other, we need a protocol. That is what will be defined here.
+
+Messages will be encoded as a JSON object. We chose this because it is easy to read and write, for both humans and computers, it is compact and it can send complex datastructures. More information can be found on http://www.json.org.
+
+Every message has a sender property, to indicate who has send the message. Also, every message has a type, to indicate what kind of message it is. And depending on the type of message, there are some more arguments, which are described below.
+
+\textbf{Some examples}:
+
+To send the chat message ``Hello, world!'', this message should be transmitted:
+\begin{verbatim}
+{"sender"="UUIDOFSENDER", "type"="chat", "message"="Hello, world!"}
+\end{verbatim}
+
+To tell the other peers that you accepted the token, and to check the gamestate, this message should be transmitted:
+\begin{verbatim}
+{"sender"="UUIDOFSENDER", "type"="begin", "gamestate"="HASHOFTHEGAMESTATE"}
+\end{verbatim}
+
+To inform a new peer about the other peers, this message should be transmitted:
+\begin{verbatim}
+{"sender"="UUIDOFSENDER", "type"="networkstate", 
+    "peers"=[{"UUID"="UUID1","IP"="10.0.0.1"}, {"UUID"="UUID2","IP"="10.0.0.2"}]}
+\end{verbatim}
+
+\subsection{Messages}
+\begin{itemize}
+  \item \textbf{Network related messages} \\
+  These messages are necessary to get the network up and running, and to pass the token to everyone in the tokenring.
+    \begin{itemize}
+      \item \textbf{connect}
+A new peer sends this message to request to join the game. This message must not be forwarded.\\
+Arguments: \\
+\textit{version}: the version of the program you are running. \\
+
+      \item \textbf{join}
+Used by the first peer to tell other already connected peers that a new peer has joined the network. This message can only be send if you control the token.\\
+Arguments: \\
+\textit{newPlayerUUID}: the UUID of the new player. \\
+\textit{newPlayerIP}: the IP of the new player. \\
+\textit{nickname}: the nickname of the new player. \\
+
+      \item \textbf{networkstate}
+Communicates the current state of the network to a new peer. This message must not be forwarded.\\
+Arguments: \\
+\textit{peers}: an array of objects containing UUID and IP values of all peers in the netwerk. \\
+
+      \item \textbf{begin}
+During a game, this communicates to the peers that you accepted the token, while passing a game state hash to check for possible desync faults (game state differences between peers).\\
+Arguments: \\
+\textit{gamestateHash}: a hash of the game state. \\
+
+      \item \textbf{pass}
+During a game, this communicates that you pass the token on to another peer.\\
+Arguments: \\
+\textit{nextPlayerUUID}: the UUID of the next player. \\
+
+      \item \textbf{part}
+This ends the round when a network problem has arisen (i.e. a disconnected peer).\\
+Arguments: None. \\
+
+      \item \textbf{desync}
+This ends the round when a difference in gamestate is detected.\\
+Arguments: None. \\
+
+    \end{itemize}
+
+  \item \textbf{Initialization messages} \\
+  These messages are to initialize the game and get everything started.
+    \begin{itemize}
+      \item \textbf{level}
+This tells the peers which level is being used in the current game, so that they can load the level file. This message can only be send if you control the token. \\
+Arguments: \\
+\textit{levelname}: the name of the level. While we don't have an option to send level files to other players, all players should have this level installed.\\
+
+      \item \textbf{ruleset}
+This tells the peers what the ruleset is for this tournament. This message can only be send if you control the token.\\
+Arguments: \\
+\textit{ruleset}: an object containing key, value pairs containing the rules for the tournament (i.e. how many rounds should be played, a time limit, etc.). \\
+    \end{itemize}
+
+  \item \textbf{Game related messages} \\
+  These messages are to communicate about what happens in the game.
+    \begin{itemize}
+      \item \textbf{input}
+This tells the other peers which input has been given. They need this input to update the game state and act accordingly. This message can only be send if you control the token.\\
+Arguments: \\
+\textit{key}: the key that was pressed. This is not the fisical key, but the logical action that that player has associated with that key. \\
+\textit{time}: the gametime the key was pressed. \\
+\textit{order}: the place of the input message in relation to other input messages sent at the same game time. \\
+
+      \item \textbf{chat}
+This transmits a chat message to all peers. This may be send at any time. \\
+Arguments: \\
+\textit{message}: the chat message. \\
+
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[A player joins the game]{\label{fig:MSC_join}\includegraphics[width=0.5\textwidth]{diagrams/MSC_join}}
+  \subfloat[A scenario during the game]{\label{fig:MSC_turn}\includegraphics[width=0.5\textwidth]{diagrams/MSC_turn}}
+  \caption{MSCs of 2 typical game situation} \label{fig:MSCs}
+\end{figure}
+
+
+\subsection{Extension options}
+We thought of some options to extend the protocol. They are needed for options that are low on our priority list, so we will not design them right now, we will just give a short description.
+
+\begin{itemize}
+ \item Join a running tournament \\
+ To make it possible to join a tournament that is already running, some information on the current tournament should be transmitted.
+ \item Recover from a network error (i.e. a disconnect from a player) \\
+ When a player disconnects, the other players have to make a new network, without loops and preferably without losing more other players, so some extra communication should be introduced to make that possible.
+ \item Level transfer \\
+ If we have support for multiple maps, it could happen that some of the players don't have the map that is going to be played. In that case it would be nice if the map will be send to that player.
+\end{itemize}
+
+
+\newpage
+\section{GUI}
+
+A number of important interface choices are described below.
+
+\subsection{Menu Structure}
+A list of menu types in our program:
+
+\begin{itemize}
+    \item Main menu
+    \item Options menu
+    \item Tournament searching menu
+    \item New tournament creation menu
+    \item Lobby menu
+    \item Tournament overview screen
+\end{itemize}
+
+When a user starts the program, it shows the \emph{Main menu}, from which a user can enter the \emph{Tournament searching menu} or the \emph{Options menu}, or quit the program. In the \emph{Options menu}, a user can change the input and output settings of the game or return to the \emph{Main menu}. In the \emph{Tournament searching menu}, a user can see which other instances of the program have been found on the network and which tournaments have been started on the network. He or she can text-chat with other players, join an existing tournament or return to the \emph{Main menu}.
+
+From the \emph{Tournament searching menu} a user can enter the \emph{New tournament creation menu}, where he or she can start a new game by choosing a level map file and tournament rules. After the player has clicked OK, the program shows the player a \emph{Lobby menu}, and it will broadcast the existence of his or her tournament to the other players. In a \emph{Lobby menu}, the player can see which other players have joined the same tournament, text-chat with other players, or start or cancel the tournament, the latter returning him or her to the \emph{Game searching menu}.
+
+A tournament consists of several rounds. Between rounds, and at the start and end of a tournament, players see the \emph{Tournament overview screen}. This screen shows the current score (if any), and in it, the creator of the tournament can start the next round, remove players from the tournament or end the tournament prematurely.
+
+\subsection{Visual Output}
+
+\begin{figure}[!ht]
+  \centering
+\includegraphics[width=\textwidth]{diagrams/interface}
+  \caption{A mock-up of the interface} \label{fig:interface}
+\end{figure}
+
+
+\label{interface}
+
+This is the way in which our visual output to the player will be organized, as illustrated in Figure~\ref{fig:interface} :
+
+The program can be run in a window or fullscreen, with fullscreen being the default. During a round, most of the screen will be taken up a by a 3D visual depiction of the player's in-game surroundings.
+
+In the top left corner of the screen, along the left side, will be the player's score, the maximum number of bombs they can create and the reach of their bombs' explosions. In the top right corner of the screen, along the right side, will be three slots which can be filled by the power-ups which the player has collected and has yet to use. Only three power-ups can be stored in this way at any one time.
+
+The clock is located at the top of the screen, which displays the time left to play in the current round (if applicable).
+
+In the lower center of the screen, at its bottom edge, will be a display of the map of the level, with moving 2D sprites giving a lot of information about the action which is taking place, facilitating strategic decision making. At the touch of a button, the minimap is enlarged to being about half as high and wide as the screen, or reduced to being about a quarter of the screen's height and length in size.
+
+The chat function will display an input field an others' text in the bottom of the screen.
+
+\subsection{Input}
+
+While in a game, the player can use the mouse to look around. There will be a default assignment of mouse buttons and keys to actions, which can be changed by the player.
+
+The default input configuration is as follows. The player moves around using the $A$, $S$, $D$ and $W$ keys. $W$ moves the avatar forward, $S$ moves him backward, and $A$/$D$ is used to move sideways. Bombs are dropped using the left mouse button. The numeric keys are used to activate the corresponding power-up. The arrow keys will be used for basic navigation through the program's menus, which can also be controlled with the cursor.
+
+List with input keys:
+ \begin{itemize}
+    \item $W$: Move forward.
+    \item $S$: Move backward.
+    \item $A$: Step sideways (left).
+    \item $D$: Step sideways (right).
+    \item $1$: Activate power-up 1.
+    \item $2$: Activate power-up 2.
+    \item $3$: Activate power-up 3.
+    \item $M$: Toggles the size of the minimap.
+    \item $TAB$: Toggles the chat window (when implemented).
+    \item $Mouse Movement$: Look around.
+    \item $Left Mouse Button$: Drop Bomb.
+ \end{itemize}
+
+\newpage
+\section{Division of work}
+
+\begin{itemize}
+
+  \item Output: Leroy, Edin, Neal
+
+  \item Network, Input: Jeroen, Anson
+
+  \item Framework, Engine: Stef, Etienne, Edin
+
+  \item Final document, Manual: Anson
+
+  \item Menus: Anyone with spare time.
+
+\end{itemize}
+
+The output and the engine will probably take most of the work, so both get two dedicated developers. These are Leroy and Neal for the output, because they have already done some exploratory work on the topic, and Stef and Etienne for the engine, for the same reason.
+
+Building the networking and input modules will yet take some time, but it is not as much work as building the above two modules, so it will get just one dedicated developer. This will be Jeroen, who has already designed the network's overall structure.
+
+Anson will work mostly on documentation, because he has already coordinated the documentation earlier in the project. He will also assist the network module's developer, particularly during the early stages, when assistance will be very helpful.
+
+Edin will help the engine developers early on, when the design of the framework will take a lot of their time. He will move on to assisting the output developers later in the project, when they will have more work. This will have the added benefit that the output developers will have someone working with them who has some knowledge of the engine.
+
+The menus will be created by anyone with spare time. They can be made as simple or as elaborate as we want, and their looks are not essential to the gameplay, so the amount of time spent on them can be more or less as large or as small as we see fit.
+
+\end{document}

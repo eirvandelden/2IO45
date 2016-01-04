@@ -1,0 +1,33 @@
+\documentclass[11pt,oneside,a4paper]{article}
+\usepackage[dutch]{babel}
+
+\begin{document}
+
+\textbf{{\LARGE{Agenda Vergadering 15 mei 2009}}}\\ \\
+\textbf{Voorzitter}: Anson\\
+\textbf{Notulist}: Etienne\\
+
+\begin{enumerate}
+
+    \item Opening
+    		\subitem Vaststellen aan- en afwezigheid
+    \item Notulen
+        \subitem Bespreken van de notulen van de vorige vergadering
+    \item Mededelingen
+			\subitem Nieuwe input tutor
+			\subitem Mededelingen vanuit de groep
+
+	 \item Reactie ontwerpdocument
+	 \item Vorderingen
+    \item Planning deze week
+
+    \item Rondvraag
+	 \item W.v.t.t.k.
+	 \item Onderwerpen voor de volgende vergadering
+    \item Sluiting\\
+
+    Logboeken invullen!
+\end{enumerate}
+
+
+\end{document} 

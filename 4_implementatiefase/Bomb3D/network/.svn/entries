@@ -1,0 +1,53 @@
+8
+
+dir
+784
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2/4_implementatiefase/Implementation/network
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2
+
+
+
+2009-06-12T12:23:02.010188Z
+735
+VeXocide
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0b2ba75a-b34a-4127-8846-746d036fda43
+
+__init__.py
+file
+
+
+
+
+2009-06-05T11:07:32.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2009-05-29T14:17:16.845463Z
+420
+s060370
+
+token.py
+file
+
+
+
+
+2009-06-12T13:03:12.000000Z
+cf6e770656ab8506fb47cb36f84e3b59
+2009-06-12T12:23:02.010188Z
+735
+VeXocide
+has-props
+

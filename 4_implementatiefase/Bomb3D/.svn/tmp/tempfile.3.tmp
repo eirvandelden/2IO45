@@ -1,0 +1,36 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import engine.engine as engine
+import maps.simple.level as level
+import output.graphics
+import engine.qhandlers
+import Queue
+import engine.player as player
+import network.token as token
+import input.input as input
+
+output.graphics.initGraphics()
+  
+p1 = player.player("1", "red", 3)
+p2 = player.player("2", "blue", 3)
+p3 = player.player("3", "black", 3)
+p4 = player.player("4", "green", 3)
+
+p = [p1, p2, p3, p4]
+
+output.graphics.initGraphics()
+g = output.graphics.graphicalLevel(p1)
+
+l = level.simple()
+o = dict()
+
+i = Queue.Queue(0);
+input = input.input(g.screen, 'input/options.ini', i, "1", 0)
+
+engine = engine.engine.engine(g, l, p, i, o)
+g.buildLists(engine.gamestate)
+
+engine.play(input)
+#g.go(engine.gamestate)
+

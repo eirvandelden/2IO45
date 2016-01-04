@@ -1,0 +1,34 @@
+\chapter{Plan of Work} % (fold)
+\label{cha:plan_of_work}
+    Because we cannot predict how much work goes into each part of the development of Bomb3D, we set an internal deadline to finish products. This deadline is one week before the official deadline. This also gives us the opportunity to receive feedback on documents. What we would like to do, is hand in products two weeks in advance, but time will tell if we can reach those goals. \\
+
+%    Zodra we beter denken te kunnen voorspellen waar de moeilijkheden liggen binnen de opdracht (netwerkcomponent, grafische component, of ergens anders) kunnen we de planning daarop aanpassen, maar die informatie hebben we nu nog niet.
+
+    \section{Roles within the project} % (fold)
+    \label{sub:roles_within_the_project}
+        We have divided different roles to each
+
+        \begin{itemize}
+            \item Anson will be our chairman. He will also be responsible for all documentation
+            \item Edin will be our time manager, making sure everyone fills in his logbook.
+            \item Etienne is our secretary and will handle external contacts.
+            \item Neal is our Quality Assurance Manager for documents.
+            \item Stef is our Quality Assurance Manager for code.
+            \item Jeroen is our network and Python specialist.
+            \item Leroy is our OpenGL specialist.
+        \end{itemize}
+
+    % section roles_within_the_project (end)
+
+
+    \section{Deciding about the type of game} % (fold)
+    \label{sec:decisions_about_the_game}
+        To help determine the type of game we will make, we held a brainstorm session. This session was split in two parts, the first to chose a genre, the second to determine a play-style or game we would replicate.
+    % section decisions_about_the_game (end)
+
+\section{Reflection} % (fold)
+\label{sec:reflection}
+    During the entire project, the exact roles of everyone changed a lot. This was due to changing priorities and people helping out with other parts of code. Documentation is the prime example, everyone has worked on their own part of documentation and sometimes on the whole document, or someone else took over documentation so that more people could code the game.
+% section reflection (end)
+
+% chapter plan_of_work (end)

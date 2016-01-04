@@ -1,0 +1,46 @@
+\BOOKMARK [0][-]{chapter.0}{Summary}{}
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}
+\BOOKMARK [0][-]{chapter.2}{Plan of Work}{}
+\BOOKMARK [1][-]{section.2.1}{Roles within the project}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Deciding about the type of game}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Reflection}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{Specification}{}
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{The assignment}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Definitions}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Our brainstorming session}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{The features}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.5.1}{Must have}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.2}{Ought to have}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.3}{Should have}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.4}{Could have}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.5}{Want to have}{section.3.5}
+\BOOKMARK [1][-]{section.3.6}{Gameplay}{chapter.3}
+\BOOKMARK [1][-]{section.3.7}{Interface}{chapter.3}
+\BOOKMARK [1][-]{section.3.8}{GUI}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.8.1}{Menu Structure}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.2}{Visual Output}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.3}{Input}{section.3.8}
+\BOOKMARK [1][-]{section.3.9}{Winning the game}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.9.1}{Technological}{section.3.9}
+\BOOKMARK [0][-]{chapter.4}{Design}{}
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Design decisions and assumptions}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Design decisions}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{Assumptions}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.3}{Reflection}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{Program modules}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{The overall design}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{UML Class diagrams}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{Reflection}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{Interpeer messages}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Introduction}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Messages}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.3}{Extension options}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.4}{Reflection}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{Division of work}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{Reflection}{section.4.5}
+\BOOKMARK [0][-]{chapter.5}{Evaluation}{}
+\BOOKMARK [1][-]{section.5.1}{Problems with the current set-up}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Peer reviews}{chapter.5}
+\BOOKMARK [0][-]{figure.5.1}{Bibliography}{}

@@ -1,0 +1,133 @@
+8
+
+dir
+784
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2/code/OpenGL
+https://svn.projexy.nl/tue-inf-ogo-31-0809-ogo3.1groep2
+
+
+
+2009-05-29T12:24:53.545383Z
+379
+leroybakker
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0b2ba75a-b34a-4127-8846-746d036fda43
+
+code_snippets
+dir
+
+2d_particle.py
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+538ad779ca0dbf96870d604fcde39d3f
+2009-04-21T13:23:31.117920Z
+104
+neal
+
+World Maze Collision
+dir
+
+hud
+dir
+
+todo.txt
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+df0377aa524e96c58f102436883f40d8
+2009-05-08T14:02:09.302818Z
+157
+0608206
+
+World
+dir
+
+rot_cube.py
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+36e6e4efaeff1b80b95c3727d3beba5c
+2009-04-03T11:50:39.744884Z
+41
+leroybakker
+
+World PyGame
+dir
+
+Cubeland First Person
+dir
+
+grid.py
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+8c2a305e01d664a7e36219275e86e374
+2009-04-03T20:46:49.980282Z
+55
+leroybakker
+
+cubeland
+dir
+
+opengl02.py
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+5c1ae229a5f9ecd2c968f532a9c33f55
+2009-04-03T12:29:27.978659Z
+43
+0608206
+
+sphere.py
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+3ec17f95214b3ba82b8fd245a2b4e49e
+2009-04-03T09:53:28.135747Z
+39
+leroybakker
+
+hello_opengl.py
+file
+
+
+
+
+2009-05-29T13:57:40.000000Z
+32d59d32ca7cfeb406ba488ce00c109b
+2009-04-01T09:21:31.896599Z
+35
+leroybakker
+

@@ -1,0 +1,51 @@
+\documentclass[]{article}
+
+\usepackage[english]{babel}
+%\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide,graphicx,fancyhdr,clrscode,amsmath,amssymb,tabularx}
+\usepackage{listings}
+\usepackage{color}
+
+\title{Shape of messages from input module and network module to engine}
+
+\begin{document}
+
+\section{input messages}
+
+This section concerns Ontwerpdocument, 4.2 game related messages, input.\\
+\\
+Input-messages are lists which have three elements - the first is a Key:
+
+\subsection{the Key}
+
+In case the Key represents a mouse click, it is a list which has three elements, the first of which is the string `ml'or 'mr', the second of which is an integer; the change in screen coordinate X, and the third of which is also an integer; the change in screen coordinate Y.\\
+\\ 
+In case the Key represents a chat message, it is a list which has two elements, the first of which is the string `c', the second of which is a the string to be sent.\\
+\\
+In case the Key represents something else, it is a list which has two elements, the first of which is the string `b', the second of which is a string as follows:
+
+\begin{itemize}
+    \item Accelerate Forward: `AcceForwZ'
+    \item Accelerate Backward: `AcceBackZ'
+    \item Step Sideways Left: `StepLeftZ'
+    \item Step Sideways Right: `StepRghtZ'
+    \item Drop Bomb: `DropBombZ'
+    \item Activate Powerup 1: `Powerup1Z'
+    \item Activate Powerup 2: `Powerup2Z'
+    \item Activate Powerup 3: `Powerup3Z'
+    \item Minimap Toggle: `MinimapTZ'
+\end{itemize}
+
+
+Where Z is On for key pressed or Off for key released.
+
+\subsection{the Player ID}
+
+The second part of an Input-message is a Player ID, which is an integer; the ID of the sending player.
+
+\subsection{the Order}
+
+The third part if an Input-message is an Order, which is an integer; the place of the input message in relation to other input messages sent at the same game time.
+
+\end{document}

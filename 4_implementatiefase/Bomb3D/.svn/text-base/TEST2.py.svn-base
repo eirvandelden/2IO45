@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+
+import engine.engine as engine
+import maps.simple.level as level
+import output.graphics
+import engine.event as event
+import engine.gamestate as gamestate
+import engine.player as player
+
+# players
+p1 = player.player("1", "red", 3);
+p2 = player.player("2", "blue", 3);
+p3 = player.player("3", "green", 3);
+p4 = player.player("4", "black", 3);
+p = [p1, p2, p3, p4]
+
+events = event.events()
+events.timeout = event.event("timeout") # arguments: gamestate, object that timed out
+events.collision = event.event("collision") # arguments: gamestate, object1, object2
+events.playerkilled = event.event("playerkilled") # arguments: gamestate, bomberman
+events.keypress = event.event("keypress") # arguments: gamestate, key, player (open to discussion)
+events.bombexplode = event.event("bombexplode") # arguments: bombcoordinate, bombrange
+time = 120 # a default
+
+g = output.graphics.graphicalLevel(p4)
+l = level.simple()
+o = dict()
+engine = engine.engine(g, l, p, o)
+l.createLevel(engine, p)
+
+gamestate = gamestate.gamestate(l, p, events, time)
+
+#engine = engine.engine(g, l, p, o)
+g.buildLists(gamestate)
+
+g.go(gamestate)

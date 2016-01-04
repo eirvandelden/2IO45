@@ -1,0 +1,144 @@
+%
+%  untitled
+%
+%  Created by Etienne van Delden on 2009-04-02.
+%  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+%\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+%\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{Notulen vergadering Groep 2 (2IO45)}
+\author{ Etienne van Delden }
+
+\date{2009-04-02}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+\section{Opening vergadering} % (fold)
+\label{sec:opening_vergadering}
+\begin{tabular}{ll}
+  Datum:      & 21-04-2009\\
+  Begin tijd: & 14:03\\
+  Voorzitter: & Anson van Rooij \\
+  Notulist:   & Etienne van Delden\\
+  \multicolumn{2}{l}{Aanwezigheid leden: Iedereen is aanwezig}
+\end{tabular}
+
+% section opening_vergadering (end)
+
+\section{Opmerkingen vorige notulen} % (fold)
+\label{sec:opmerkingen_vorige_notulen}
+  De notulen zijn goedgekeurd.
+% section opmerkingen_vorige_notulen (end)
+
+\section{Evaluatie afgelopen week} % (fold)
+\label{sec:evaluatie_afgelopen_week}
+  \begin{itemize}
+    \item Het voorlopige ontwerp document was wat later opgestuurd dan gepland
+    \item We hebben collision detection in principe draaiende, maar het heeft nog bugs.
+  \end{itemize}
+
+% section evaluatie_afgelopen_week (end)
+
+\section{Geplande items} % (fold)
+\label{sec:geplande_items}
+
+  \subsubsection{Reactie Specificatie} % (fold)
+  \label{ssub:reactie_specificatie}
+    \begin{itemize}
+      \item Definities mogen best verder vooraan staan.
+      \item We moeten naar de definities verwijzen (en welke en waar ze staan)
+      \item Er zijn nog wat spelfoutjes, maar het is in principe goed
+    \end{itemize}
+  % subsubsection reactie_specificatie (end)
+  
+  \subsubsection{Reactie Ontwerp Document} % (fold)
+  \label{ssub:reactie_ontwerp_document}
+    \begin{itemize}
+      \item Het interface gedeelte had misschien in de specificatie gemoeten, maar het kan ook wel in het ontwerp document
+      \item De taakverdeling moet in het werkplan staan
+      \item Voeg de design decisions samen op 1 plek
+      \item Na invulling van de missende stukken tekst ziet het er goed uit.
+    \end{itemize}
+  % subsubsection reactie_ontwerp_document (end)
+  
+% section geplande_items (end)
+
+\section{Planning komende week} % (fold)
+\label{sec:planning_komende_week}
+  \begin{itemize}
+    \item Classe diagrammen moeten nog gemaakt worden, maar dit is niet veel werk.
+    \item Graphics gedeelte ligt goed op schema
+    \item Er was een probleem met onze netwerk opzet als clients tegelijkertijd werden opgestart. Jeroen denkt hier nu een oplossing voor te hebben. (Er werd een oplossing met klokken gegeven, maar die is verworpen omdat de klokken dan in sync moeten zijn).
+  \end{itemize}
+% section planning_komende_week (end)
+
+
+
+\section{W.V.T.T.K} % (fold)
+\label{sec:w_v_t_t_k}
+  \begin{itemize}
+    \item 5 Mei is de TU/e gesloten
+    \item Er is een balancing issues document online gezet.
+
+  \end{itemize}
+% section w_v_t_t_k (end)
+
+\section{Sluiting} % (fold)
+\label{sec:sluiting}
+\emph{om 14:12}
+% section sluiting (end)
+
+\end{document}

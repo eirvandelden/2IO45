@@ -1,0 +1,135 @@
+%
+%  untitled
+%
+%  Created by Etienne van Delden on 2009-04-02.
+%  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+%\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+%\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{Notulen vergadering Groep 2 (2IO45)}
+\author{ Etienne van Delden }
+
+\date{2009-04-02}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+\section{Opening vergadering} % (fold)
+\label{sec:opening_vergadering}
+\begin{tabular}{ll}
+  Datum:      & 27-03-2009\\
+  Begin tijd: & 14:36\\
+  Voorzitter: & Anson van Rooij \\
+  Notulist:   & Etienne van Delden\\
+  \multicolumn{2}{l}{Aanwezigheid leden: Iedereen is aanwezig}
+\end{tabular}
+
+% section opening_vergadering (end)
+
+\section{Opmerkingen vorige notulen} % (fold)
+\label{sec:opmerkingen_vorige_notulen}
+  In de vorige notulen staat dat Edin onze technische specialist is. Dit is incorrect en zal worden aangepast.
+% section opmerkingen_vorige_notulen (end)
+
+\section{Geplande Mededelingen} % (fold)
+\label{sec:geplande_mededelingen}
+  \begin{itemize}
+    \item Het probleem van de extra groep is opgelost. Alle groepen blijven in hun huidige grootte en er hoeft niemand van onze groep weg.
+    \item Het verslag en alle documentatie mag in het engels, in tegenstelling tot wat er in de project wijzer staat. Het merendeel van de groep is er voor om alle documentatie in het engels te doen en zal vanaf heden zo worden gemaakt. Het werkplan zal op een later moment vertaald worden.
+  \end{itemize}
+% section geplande_mededelingen (end)
+
+\section{Overige Mededelingen} % (fold)
+\label{sec:overige_mededelingen}
+
+\subsection*{Tutor} % (fold)
+\label{sub:tutor}
+\begin{itemize}
+  \item De deadlines zijn allemaal een week naar voren geschoven. Dit staat ook op studyweb (sinds een week).
+  \item Waarom gebruiken jullie Python en niet bijv. C++? Python is een makkelijk te leren taal, waar in makkelijk goede nette code kan worden geschreven. Ook is het multi-platform. C++ zou zeker tot een sneller programma leiden, maar is veel moeilijker te leren en daarom niet wenselijk.
+\end{itemize}
+% subsection tutor (end)
+% section overige_mededelingen (end)
+
+\section{Planning komende week} % (fold)
+\label{sec:planning_komende_week}
+  \begin{itemize}
+    \item Neal wordt onze Quality Assurance Manager voor documenten.
+    \item Stef Louwers wordt onze Quality Assurance Manager voor code.
+    \item Onze specificatie staat al globaal op svn.
+    \item Het werkplan moet de planning en rolverdeling bevatten. Het is een soort samenvatting van de vorige notulen.
+  \end{itemize}
+% section planning_komende_week (end)
+
+\section{Jeroens spannende netwerk demo} % (fold)
+\label{sec:jeroens_spannende_netwerk_demo}
+ \begin{itemize}
+  \item Stef stelt voor om de clients te synchroniseren op frame, in plaats van een token ring te gebruiken. Jeroen zegt dat we daarvoor heel veel integratie met OpenGL moeten doen, terwijl het nu onafhankelijk van al het andere is. Ook is het dan makkelijk om om te gaan met clients die wegvallen.
+ \end{itemize}
+% section jeroens_spannende_netwerk_demo (end)
+
+\section{W.V.T.T.K} % (fold)
+\label{sec:w_v_t_t_k}
+  \begin{itemize}
+    \item Als we feedback over onze specificatie willen, dan kunnen we het al eerder inleveren.
+  \end{itemize}
+% section w_v_t_t_k (end)
+
+\section{Sluiting} % (fold)
+\label{sec:sluiting}
+\emph{om 14:45}
+% section sluiting (end)
+
+\end{document}

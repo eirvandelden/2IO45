@@ -1,0 +1,34 @@
+\documentclass[]{article}
+
+\usepackage[english]{babel}
+%\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide,graphicx,fancyhdr,clrscode,amsmath,amssymb,tabularx}
+\usepackage{listings}
+\usepackage{color}
+
+\title{Shape of messages from input module and network module to engine}
+
+\begin{document}
+
+messages are strings and look like this:
+
+\section{Constants}
+\begin{itemize}
+    \item Mouse position: `m X Y' 
+    \item Accelerate Forward: `b 01Z'
+    \item Accelerate Backward: `b 02Z'
+    \item Step Sideways Left: `b 03Z'
+    \item Step Sideways Right: `b 04Z'
+    \item Drop Bomb: `b 05Z'
+    \item Activate Powerup 1: `b 06Z'
+    \item Activate Powerup 2: `b 07Z'
+    \item Activate Powerup 3: `b 08Z'
+    \item Minimap Toggle: `b 09Z'
+    \item Chat Toggle: `b 00Z'
+    \item Chatbericht: `c berichtberichtberichtbericht'
+\end{itemize}
+
+where X and Y are coordinates, between 0 and 640, and Z is 0 for key pressed or 1 for key released.
+
+\end{document} 

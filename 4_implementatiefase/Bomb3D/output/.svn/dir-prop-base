@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 98
+graphics.pyc
+hud.pyc
+math3D.pyc
+texture.pyc
+vector.pyc
+sound.pyc
+__init__.pyc
+camera.pyc
+draw.pyc
+
+END

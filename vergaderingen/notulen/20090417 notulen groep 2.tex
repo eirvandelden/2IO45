@@ -1,0 +1,137 @@
+%
+%  untitled
+%
+%  Created by Etienne van Delden on 2009-04-02.
+%  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+%\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+%\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{Notulen vergadering Groep 2 (2IO45)}
+\author{ Etienne van Delden }
+
+\date{2009-04-02}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+\section{Opening vergadering} % (fold)
+\label{sec:opening_vergadering}
+\begin{tabular}{ll}
+  Datum:      & 17-04-2009\\
+  Begin tijd: & 14:10\\
+  Voorzitter: & Anson van Rooij \\
+  Notulist:   & Etienne van Delden\\
+  \multicolumn{2}{l}{Aanwezigheid leden: Edin is afwezig (afgemeld)}
+\end{tabular}
+
+% section opening_vergadering (end)
+
+\section{Opmerkingen vorige notulen} % (fold)
+\label{sec:opmerkingen_vorige_notulen}
+  De notulen zijn goedgekeurd.
+% section opmerkingen_vorige_notulen (end)
+
+\section{Evaluatie afgelopen week} % (fold)
+\label{sec:evaluatie_afgelopen_week}
+
+  \subsection{Vooruitgang Graphics} % (fold)
+  \label{sub:vooruitgang_graphics}
+    Het is al mogelijk om op een grid te lopen. PyGame wordt gebruikt voor de afhandeling van toetsenbord en muis.
+  % subsection vooruitgang_graphics (end)
+
+  \subsection{Correctie specificatie document} % (fold)
+  \label{sub:correctie_specificatie_document}
+    Het is gecorrigeerd.
+  % subsection correctie_specificatie_document (end)
+
+% section evaluatie_afgelopen_week (end)
+
+\section{Geplande items} % (fold)
+\label{sec:geplande_items}
+
+  \begin{itemize}
+    \item De tutor heeft geen opmerkingen
+    \item Het studentenoverleg was niet boeiend. Het was goed dat we al een werkend netwerk hebben. We zijn de enige groep met python (rest gebruikt C, C++ of pascal). We zijn dus als enige echt multiplatform. We hoeven geen rekening te houden met verdwijnende tokens. Tevens werd er gezegd dat het moeilijk is om deze OGO niet te halen.
+  \end{itemize}
+
+% section geplande_items (end)
+
+\section{Planning komende week} % (fold)
+\label{sec:planning_komende_week}
+  \begin{itemize}
+    \item Dinsdag 21 april wordt er een vrijdag rooster gedraaid. Er is dan wel een vergadering. We leveren vandaag een draft van het ontwerpdocument in zodat we daar feedback op kunnen krijgen.
+    \item Leroy gaat kijken naar collision detection. Stef heeft hier al ervaring mee en stelt voor een bounding box te gebruiken, het simpelste en het makkelijkst.
+    \item Op netwerk gebied is er nog niet veel vooruit gang, daar zal vandaag verandering in komen. (Jeroen)
+    \item Anson, Neal en Etienne gaan het document maken, teksten schrijven en diagrammen maken.
+    \item We gaan goed samen overleggen en dit documenteren, zodat we niet steeds ergens over moeten discussieren hoe het ook alweer was.
+  \end{itemize}
+% section planning_komende_week (end)
+
+
+
+\section{W.V.T.T.K} % (fold)
+\label{sec:w_v_t_t_k}
+  \begin{itemize}
+    \item Etienne gaat kijken naar een kort verhaal achter het spel in het weekend. Het is niet verplicht, maar volgens de tutor is het zeker een pluspunt. We hadden al samen besloten dat het een Sci-Fi setting zou hebben.
+    \item We spreken af dat we de dinsdag in de tentamen week (28 april) \textbf{wel} aan OGO gaan werken. 
+  \end{itemize}
+% section w_v_t_t_k (end)
+
+\section{Sluiting} % (fold)
+\label{sec:sluiting}
+\emph{om 14:20}
+% section sluiting (end)
+
+\end{document}

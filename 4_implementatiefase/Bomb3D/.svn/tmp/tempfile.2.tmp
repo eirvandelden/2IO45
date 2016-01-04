@@ -1,0 +1,53 @@
+FRAMEWORK:
+
+Options
+- input options
+- try excepts
+
+OUTPUT:
+
+delete unused code
+
+GRAPHICS:
+
+minimap resizing
+
+COLLISION:
+
+correctie staat niet aan want werkt niet correct: fixen.
+
+bounding box size? alleen nog even testen.
+
+ENGINE:
+
+scores
+
+respawning + death handling?
+
+bommen gaan door de muur! / bommen op het grid
+
+echte map.
+
+chat.
+
+TIJD OVER:
+
+support voor het gebruik van andere rulesets?
+
+special powerup: invincibility?
+
+special powerup: movement speed?
+
+<<<<<<< .mine
+=======
+special powerup: plaats krat?
+>>>>>>> .r584
+
+<<<<<<< .mine
+
+bommen gaan niet door de muur!=======
+maps keuze? 
+
+meerdere maps.
+
+collision met de buitenkant van het level? minder blokken doet toch wel heel veel voor de snelheid.>>>>>>> .r584

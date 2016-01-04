@@ -1,0 +1,91 @@
+%
+%  untitled
+%
+%  Created by Etienne van Delden on 2009-03-24.
+%  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+%\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+%\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{Notulen OGO 3.1 Vergadering }
+\author{ Etienne van Delden}
+
+\date{2009-03-20}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+\section{Aanwezigheid leden:} % (fold)
+\label{sec:aanwezigheid_leden_}
+Aanwezig: Anson van Rooij, Neal van den Eertwegh, Jeroen Habraken, Edin Dudojevic, Stef Louwers,
+Afwezig: Stef van den Elzen (tutor, afgemeld), Leroy Bakker (onbekend)
+% section aanwezigheid_leden_ (end)
+
+\section{Afspraken} % (fold)
+\label{sec:afspraken}
+ Wij hebben de volgende afspraken gemaakt:
+ \begin{itemize}
+  \item Anson van Rooij zal de voorzitter zijn en verantwoordelijk zijn voor de verslaglegging.
+  \item Edin Dudojevic wordt onze tijdmanager.
+  \item Etienne van Delden zal notuleren. Ook zal hij naar het studentenoverleg gaan.
+  \item Wij hanteren zachten deadlines, van 1 week voor de harde deadline, bij voorkeur 2 weken van te voren.
+  \item Wij maken gebruik van www.projexy.nl voor de logboeken, svn repository en de email groepen. Project: OGO 3.1 Groep 2, Wachtwoord: blaat
+  \item Iedereen is er mee eens dat wij geen gebruik willen maken van Delphi / Pascal. Wij willen gebruik maken van Python, waar Jeroen veel ervaring mee heeft. We kiezen voor Python omdat het makkelijk te leren is, je kan prima goede code maken, makkelijk te gebruiken is en multi-platform. Het nadeel is dat het merendeel van ons het nog niet kent en het is niet snel.
+  \item In principe geldt de regel te laat = taart, maar we hebben niets exacts afgesproken.
+ \end{itemize}
+% section afspraken (end)
+
+\bibliographystyle{plain}
+\bibliography{}
+\end{document}

@@ -1,0 +1,5 @@
+\chapter{Introduction} % (fold)
+\label{cha:inleiding}
+    During this OGO we had to make a network distributed 3D game, with a synchronization demand. After a brainstorm session, we have chosen to implement our own version of Bomberman (called Bomb3D), a multiplayer game by Hudson Soft. In Bomb3D, players must destroy each other, by first destroying soft wall that can reveal power-ups. These power-ups must be synchronized, when player A picks it up, no other player can pick it up again. With this decision, we differentiated from the original food gathering demand, but kept the synchronization challenge.
+
+% chapter inleiding (end) 

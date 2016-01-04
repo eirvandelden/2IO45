@@ -1,0 +1,19 @@
+TEST NAME: Demo
+RULES: Teleporting, Ghostly, Invincible
+KEY:
+.=empty
+c=brown cube crate
+q=grey cube questionblock
+a=brown cube aztec_box
+l=white pyramid laughing_man
+t=brown cube tails_crate
+i=blue pyramid icehouse_pyramid
+LAYOUT:
+t.t.t.t.
+.t.t.t.t
+........
+........
+........
+........
+........
+........

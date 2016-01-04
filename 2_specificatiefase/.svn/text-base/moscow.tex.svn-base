@@ -1,0 +1,122 @@
+%
+%  untitled
+%
+%  Created by Etienne van Delden on 2009-04-03.
+%  Copyright (c) 2009 __MyCompanyName__. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+%\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{A LaTeX Article}
+\author{  }
+
+\date{2009-04-03}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+
+\begin{abstract}
+\end{abstract}
+
+\section{Must have} % (fold)
+\label{sec:must_have}
+ \begin{itemize}
+  \item Collision detection
+  \item Word
+  \item Network
+  \item Interface
+  \item Food
+ \end{itemize}
+% section must_have (end)
+
+\section{Ought have} % (fold)
+\label{sec:ought_have}
+\begin{itemize}
+  \item Power Ups
+  \item Weapons
+  \item Audio
+\end{itemize}
+% section ought_have (end)
+
+\section{Should have} % (fold)
+\label{sec:should_have}
+\begin{itemize}
+  \item Chat
+  \item Multiple maps
+  \item Textures
+\end{itemize}
+% section should_have (end)
+
+\section{Could have} % (fold)
+\label{sec:could_have}
+\begin{itemize}
+  \item Map Editor
+  \item Game Rules (for mods)
+  \item Movies
+\end{itemize}
+% section could_have (end)
+
+\section{Want have} % (fold)
+\label{sec:want_have}
+\begin{itemize}
+  \item Dynamics
+  \item Physics
+  \item No Copyright material / Own copyright material
+\end{itemize}
+% section want_have (end)
+
+\bibliographystyle{plain}
+\bibliography{}
+\end{document}

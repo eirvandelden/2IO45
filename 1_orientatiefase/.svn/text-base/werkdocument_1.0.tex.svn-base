@@ -1,0 +1,99 @@
+\documentclass[a4paper,twoside,11pt]{article}
+\usepackage{a4wide,amsmath,amssymb,verbatim}%,oz}
+\usepackage{algorithm}
+\usepackage{listings}
+\usepackage[pdftex]{hyperref}
+\lstset{language=Pascal,basicstyle=\small}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex}
+
+\begin{document}
+   \begin{titlepage}
+        {\ }\\[5.0cm]
+        { {\Large OGO 3.1 spring 2009}}\\[0.2cm]
+        {\bf \Huge Werkdocument versie 1.0}\\[0.1cm]
+        { {\Large {Technische informatica, TU/e} }}\\[1.0cm]
+        {\ Eindhoven, \today }\\[0.2cm]
+        \begin{flushright}
+            {\bf {\small Group 2 }}\\[0.0cm]
+            {\em {\small Etienne van Delden, 0618959}}\\
+            {\em {\small Edin Dudojevic, 0608206}}\\
+            {\em {\small Jeroen Habraken, 0586866}}\\
+            {\em {\small Neal van den Eertwegh, 0610024 }}\\
+            {\em {\small Stef Louwers, 0590864}}\\
+            {\em {\small Leroy Bakker, 0617167}}\\
+            {\em {\small Anson van Rooij, 0596312}}\\[0.5cm]
+        \end{flushright}
+    \end{titlepage}
+    \tableofcontents
+    \newpage
+
+\section{Introductie}
+
+Dit document betreft de ori\"entatiefase. In deze fase vond de ori\"entatie op de opdracht plaats en werd kennis gemaakt met de andere groepsleden. De benodigde documentatie en software werden verzameld. De groep organiseerde zichzelf, verdeelde de rollen en taken en legde de genomen besluiten en de planning vast in een werkplan.
+
+\section{Algemeen}
+
+We gaan het programma maken in python, de verslaglegging gebeurt in het engels (dit document is daar een uitzondering op omdat die beslissing pas is genomen nadat we aan dit document begonnen, dat zal ter zijner tijd aangepast worden).
+
+\section{Werkplan}
+
+We stellen de interne deadlines voor het leveren van de producten op een week voor de officië\"ele deadline, dit in verband met de lastig voorspelbare hoeveelheden werk per onderdeel en de mogelijkheid tot het krijgen van feedback. Natuurlijk werken we dan het liefst ook nog voor de interne deadline uit, maar het is maar de vraag of dat gaat lukken.
+
+Zodra we beter denken te kunnen voorspellen waar de moeilijkheden liggen binnen de opdracht (netwerkcomponent, grafische component, of ergens anders) kunnen we de planning daarop aanpassen, maar die informatie hebben we nu nog niet.
+
+\subsection{Technische orientatie}
+
+Tijdens de eerste fases van het project zal er al af en toe huiswerk worden opgegeven in de trant van ``installeer programma X'' of ``zorg dat je enigszins bekend bent met taal Y'', om te zorgen dat we vrij snel een werkende basis in elkaar kunnen zetten voor ons spel.
+
+\subsection{Specificatiefase}
+
+We hopen de specificatie vrij snel af te krijgen. We gebruiken voor de specificatie MOSCoW om te kijken wat we willen doen. MOSCoW staat voor; Must have, Ought have, Should have, Could have, Want have. Die vijf categorie\"en hebben aflopende prioriteit. Er komen dus ook verschillende niveaus in de specificatie.
+
+\subsection{Ontwerpfase}
+
+Nog nader te bepalen.
+
+\subsection{Implementatiefase}
+
+Nog nader te bepalen.
+
+\subsection{Eindfase}
+
+De groep zal ter zijner tijd mensen aanwijzen om de presentatie te houden.
+
+\section{Taakverdeling}
+
+Hieronder een verdeling van de verantwoordelijkheden wat betreft het regelen en communiceren. De ervaring leert dat het op voorhand verdelen van groepsleden over verschillende technische onderdelen van het project (netwerk, grafisch, etc) weinig zinnig is. Pas als het werk begonnen is wordt duidelijk hoeveel mankracht er op verschillende punten nodig is, hoezeer twee onderdelen parallel geproduceerd kunnen worden, en wat de technische uitdagingen zijn.
+
+Daarom nog geen verdeling over de verschillende technische onderdelen, hoewel daar al wel iets dingen over kunnen worden gezegd: verdeling over de technische onderdelen zal zo gebeuren dat groepsleden zoveel mogelijk ervaring op kunnen doen met nieuwe talen en systemen. Dit natuurlijk wel binnen de tijdsgrenzen die aan dit project vast zitten.
+
+Voorzitter: Anson\\
+Taak: Maakt een agenda, zit de vergaderingen voor, houdt overzicht over de taakverdeling, documentatie en verslaglegging.
+
+Notulist/vertegenwoordiging: Etienne\\
+Taak: Notuleert bij de vergadering, en gaat naar het studentenoverleg.
+
+Pythonspecialist: Jeroen\\
+Taak: Assisteert in het oppikken van python, maakt bovendien (na overleg) de uiteindelijke technische keuzes rond het netwerk (gebruik van talen en pakketten, globale opzet programma, etc).
+
+OpenGLspecialist: Leroy\\
+Taak: Assisteert in het oppikken van OpenGL, maakt bovendien (na overleg) de uiteindelijke technische keuzes rond de graphics (gebruik van talen en pakketten, globale opzet programma, etc).
+
+Tijdmanager: Edin\\
+Taak: Houdt de voortgang in de gaten, zit mensen achter de vodden, zorgt dat het project op schema blijft. Zet de werkverdeling per week op SVN.
+
+Verslaglegging QAM: Neal\\
+Taak: Eindcontrole en inlevering verslagen.
+
+Technisch QAM: Stef\\
+Taak: Hoofdprogrammatester, houdt bugs en todos bij.
+
+\section{Misc}
+
+\subsection{Te laat = vlaai}
+
+Te laat komen zonder goede reden en afmelding vantevoren betekent de volgende keer vlaai meebrengen.
+
+\end{document}
